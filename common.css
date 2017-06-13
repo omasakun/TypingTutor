@@ -1,0 +1,102 @@
+/* 
+# ここでスタイルをしているClass名 
+	fullH fullW
+	cV cH grow
+	scrollX scrollY
+	listV hide stock
+# Tag
+	h1
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #EEE;
+	color: #222;
+	font-family: "Kokoro", "Rounded Mplus 1c", "Open Sans", 'Noto Sans Japanese', "Yu Gothic", "Meiryo UI", sans-serif;
+	font-weight: 300;
+	padding: 0 1em;
+}
+
+html,
+body,
+.fullH {
+	height: 100%;
+}
+
+html,
+body,
+.fullW {
+	width: 100%;
+}
+
+.cV {
+	display: flex;
+	flex-direction: column;
+}
+
+.cH {
+	display: flex;
+	flex-direction: row;
+}
+
+.grow {
+	flex-grow: 1;
+}
+
+.scrollY {
+	overflow-y: auto;
+}
+
+.scrollX {
+	overflow-x: auto;
+}
+
+.listV>* {
+	display: block;
+	margin-bottom: 0.2em;
+}
+
+.hide {
+	display: none;
+}
+
+.stack>* {
+	position: absolute;
+}
+
+.stack>*>* {
+	position: relative;
+}
+
+h1 {
+	display: flex;
+	font-weight: inherit;
+	font-size: 1.5rem;
+	justify-content: left;
+}
+
+h1::before,
+h1::after {
+	content: "";
+	display: inline-block;
+	flex-grow: 1;
+	background: linear-gradient(transparent 50%, #AAA 50%, #AAA calc(50% + 2px), transparent calc(50% + 2px));
+	max-width: 5em;
+}
+
+h1::before {
+	margin-right: 1em;
+}
+
+h1::after {
+	margin-left: 1em;
+}
+
+.center {
+	text-align: center;
+}

@@ -1,0 +1,65 @@
+/*
+		h1:not(:first-child) {
+			margin-top: 1em;
+		}
+
+		.button {
+			display: inline-block;
+			text-align: center;
+			padding: .4em .7em;
+			border-radius: 5px;
+			box-shadow: 0 1px 5px rgba(0, 0, 0, .7);
+			margin: 8px 3px;
+			cursor: pointer;
+			user-select: none;
+			transition: all .1s;
+			min-height: 2em;
+			line-height: 2em;
+			vertical-align: middle;
+		}
+
+		.button:hover {
+			box-shadow: 0 1px 8px #000;
+			background-color: #DDD;
+		}
+
+		.button:active {
+			box-shadow: 0 0px 2px rgba(0, 0, 0, .5);
+		}
+
+		.center {
+			text-align: center;
+		}
+*/
+.char {
+	padding: 0 .25em;
+	font-weight: bold;
+	cursor: pointer;
+}
+.char:not(.active) {
+	color:#AAA;
+}
+header>*:not(:first){
+	padding-left: .5em;
+}
+.gray-button{
+	font-weight: bold;
+	color:#AAA;
+}
+
+#practice{
+	background: #DDD;
+	font-weight: bold;
+	font-size:1.5em;
+	border-radius: 5px;
+}
+#practice>*{
+	padding:.5em;
+	color:#555;
+}
+.charList{
+	margin-left:.5em;
+}
+tr>*{
+	padding:0 1em;
+}
