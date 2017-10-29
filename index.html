@@ -16,75 +16,70 @@
 </head>
 
 <body>
-	<header class="cH">
-		<div>
-			<span class="char active">1</span>
-			<span class="char active">2</span>
-			<span class="char active">3</span>
-			<span class="char active">4</span>
-			<span class="char">5</span>
-			<span class="char">6</span>
-			<span class="char">7</span>
-			<span class="char">8</span>
-			<span class="char">9</span>
-			<span class="char">0</span>
-		</div>
+	<header class="cH cWrap">
 		<div class="grow"></div>
-		<span id="status">Analysing 32%</span>
+		<span id="status">Analysing...</span>
 		<span class="gray-button" id="upload">UP</span>
 		<span class="gray-button" id="download">DL</span>
 	</header>
-	<div id="practice">
-		<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, magnam.</div>
-		<div>Similique debitis id expedita et perspiciatis nobis voluptatibus eum consequuntur!</div>
-		<div>Eum enim facere unde nostrum mollitia at explicabo, ex neque.</div>
+	<div id="practice" class="waiting">
+		<div id="line1"><span id="l1-Log"></span><pre id="l1-Fin"></pre><pre id="l1-Practice"></pre></div>
+		<pre id="line2"></pre>
 	</div>
-	<div class="center">Score || 342</div>
-	<h1>WPM</h1>
-	<div>measured: <span id="WPMmeasured">3678</span></div>
-	<div>tip: <span id="WPMmeasured">3678</span></div>
-	<div>weak...<span class="charList" id="WPMweak"><span>a:-71</span><span>b:-71</span></span>
+	<div id="score-container" class="cCenter cH cWrap">
+		<span id="score">Score:...</span>
+		<span id="WPMmeasured">...WPM</span>
+		<span id="ACCmeasured">Acc....%</span>
 	</div>
-	<div>strong...<span class="charList" id="WPMstrong"><span>a:+71</span><span>b:+71</span></span>
+	<div class="cH cWrap">
+		<div class="grow">
+			<h1>WPM</h1>
+			<div>tip: <span id="WPMtip">...WPM</span></div>
+			<div>weak...<span class="charList" id="WPMweak"></span> </div>
+			<div>strong...<span class="charList" id="WPMstrong"></span> </div>
+		</div>
+		<div class="grow">
+			<h1>Accuracy</h1>
+			<div>tip: <span id="ACCtip">Acc....%</span></div>
+			<div>weak...<span class="charList" id="ACCweak"></span> </div>
+			<div>strong...<span class="charList" id="ACCstrong"></span> </div>
+		</div>
 	</div>
-	<h1>Accuracy</h1>
-	<div>measured: <span id="ACCmeasured">38%</span></div>
-	<div>tip: <span id="ACCmeasured">36%</span></div>
-	<div>weak...<span class="charList" id="ACCweak"><span>a:-71</span><span>b:-71</span></span>
-	</div>
-	<div>strong...<span class="charList" id="ACCstrong"><span>a:+71</span><span>b:+71</span></span>
-	</div>
-	<h1>Growth</h1>
-	<table>
-		<thead>
-			<tr>
-				<th>Date</th>
-				<th>Status</th>
-				<th>Words</th>
-				<th>Time</th>
-				<th>WPM</th>
-				<th>Accuracy</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td>2016/4/8</td>
-				<td>Analysing 83%</td>
-				<td>152</td>
-				<td>1:32</td>
-				<td>273</td>
-				<td>19%</td>
-			</tr>
-			<tr>
-				<td>2016/4/8</td>
-				<td>Analysing 83%</td>
-				<td>152</td>
-				<td>1:32</td>
-				<td>273</td>
-				<td>19%</td>
-			</tr>
+	<!--
+	<div class="fullW scrollX">
+		<h1>Growth</h1>
+		<table>
+			<thead>
+				<tr>
+					<th>Date</th>
+					<th>Status</th>
+					<th>Words</th>
+					<th>Time</th>
+					<th>WPM</th>
+					<th>Accuracy</th>
+				</tr>
+			</thead>
 			<tbody>
-	</table>
+				<tr>
+					<td>2016/4/8</td>
+					<td>Analysing 83%</td>
+					<td>152</td>
+					<td>1:32</td>
+					<td>273</td>
+					<td>19%</td>
+				</tr>
+				<tr>
+					<td>2016/4/8</td>
+					<td>Analysing 83%</td>
+					<td>152</td>
+					<td>1:32</td>
+					<td>273</td>
+					<td>19%</td>
+				</tr>
+				<tbody>
+		</table>
+	</div>
+	-->
 	<style>
 		@import url('https://fonts.googleapis.com/earlyaccess/notosansjapanese.css');
 		@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,700');

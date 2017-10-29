@@ -31,35 +31,84 @@
 			text-align: center;
 		}
 */
+
 .char {
 	padding: 0 .25em;
 	font-weight: bold;
 	cursor: pointer;
 }
+
 .char:not(.active) {
-	color:#AAA;
-}
-header>*:not(:first){
-	padding-left: .5em;
-}
-.gray-button{
-	font-weight: bold;
-	color:#AAA;
+	color: #AAA;
 }
 
-#practice{
+header>*:not(:first-child) {
+	padding-left: .5em;
+}
+
+.gray-button {
+	font-weight: bold;
+	color: #AAA;
+	cursor: pointer;
+}
+
+#practice {
 	background: #DDD;
 	font-weight: bold;
-	font-size:1.5em;
+	font-size: 1.5em;
 	border-radius: 5px;
+	margin-top: .5rem;
 }
-#practice>*{
-	padding:.5em;
-	color:#555;
+
+#practice.waiting {
+	background: #AAA;
 }
-.charList{
-	margin-left:.5em;
+
+#practice>* {
+	padding: .5em;
+	color: #555;
 }
-tr>*{
-	padding:0 1em;
+
+#practice pre {
+	font-family: inherit;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+	display: inline;
+}
+
+#l1-Fin,
+#l1-Log>* {
+	color: #EEE;
+	background-color: #555;
+}
+
+#l1-Log>* {
+	color: #EEE;
+	background: linear-gradient(to right, #555 calc(100% - 2px), #F00 calc(100% - 1px));
+}
+
+.charList {
+	margin-left: .5em;
+	font-weight: bold;
+}
+
+.charList>*:not(:first-child) {
+	margin-left: .5em;
+}
+
+.charList>*:nth-child(odd){
+	color: #777;
+}
+
+#score-container {
+	margin-bottom: 1em;
+	font-size: 2em;
+}
+
+#score-container>* {
+	padding: 0 1em;
+}
+
+tr>* {
+	padding: 0 1em;
 }

@@ -44,8 +44,30 @@ body,
 	flex-direction: row;
 }
 
+.cV>*,
+.cH>* {
+	flex-shrink: 0;
+}
+
+.cH {
+	display: flex;
+	flex-direction: row;
+}
+
 .grow {
 	flex-grow: 1;
+}
+
+.cWrap {
+	flex-wrap: wrap;
+}
+
+.cCenter {
+	justify-content: center;
+}
+
+.cSpace{
+	justify-content: space-around;
 }
 
 .scrollY {
