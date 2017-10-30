@@ -55,7 +55,7 @@ header>*:not(:first-child) {
 #practice {
 	background: #DDD;
 	font-weight: bold;
-	font-size: 1.5em;
+	font-size: 3em;
 	border-radius: 5px;
 	margin-top: .5rem;
 }
