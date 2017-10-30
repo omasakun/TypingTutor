@@ -101,7 +101,7 @@ function MakeQuestions(resultCount) {
 			tmp.scoreInfs += v[1];
 		else tmp.score += item.score * v[1];
 		tmp.freq += item.freq * v[1];
-		tmp.count+=v[1];
+		tmp.count += v[1];
 		wordIDs.set(Words[v[0]], tmp);
 	}));
 	/**@type {string[]} */
@@ -269,8 +269,8 @@ function ShowStatus() {
 	_set("totalType", playingStat.type + " types");
 	_set("totalTypo", playingStat.typo + " typos");
 	function ms2text(ms) {
-		var ms = s = (ms << 0) / 1000, m = (ms / 60 / 1000) << 0, h = (ms / 60 / 60 / 1000) << 0;
-		return h + ":" + (m % 60) + ":" + s;
+		var s = (ms << 0) / 1000, m = (ms / 60 / 1000) << 0, h = (ms / 60 / 60 / 1000) << 0;
+		return h + ":" + (m % 60) + ":" + (s % 60);
 	}
 	function _setList(id, arr) {
 		_(id).innerHTML = "";
